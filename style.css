@@ -1,0 +1,355 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito',sans-serif;
+}
+
+
+
+
+
+
+section{
+
+    padding: 10rem 1% 2rem;
+
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    cursor: default;
+}
+
+
+
+.navbar a:hover,
+.navbar a:active{
+    color: white;
+}
+
+#menu-icon{
+    font-size: 48px;
+    color: white;
+    display: none;
+}
+
+
+ 
+
+ body{
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+
+:root{
+
+    --background-color: #191f36;
+    --text-color:white;
+    --main-color:#59B2F4;
+  }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+
+}
+
+.lg{
+    width:50%;
+    
+
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    cursor: default;
+    margin-left: 35px;
+}
+
+
+.hdnv{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar a{
+    font-size: 14px;
+    color: white;
+    margin-left: 24px;
+    font-weight: 700;
+
+}
+
+
+.home-content{
+    display: flex;
+    width: 100%;
+}
+
+.iam{
+    width: 50%;
+    align-items: center;
+    
+
+}
+
+
+.iam h1{
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 74px;
+    font-family:"Sofia", sans-serif ;
+    letter-spacing: 5px;
+
+}
+
+
+span{
+    color: var(--main-color);
+}
+
+.iam h3{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 74px;
+    font-family:"Sofia", sans-serif ;
+    letter-spacing: 5px;
+
+}
+
+
+.iam p{
+    font-size: 24px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 15px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2rem;
+    transition: 5s ease;
+}
+.social-media a :hover{
+    box-shadow: none;
+}
+
+
+.pfimg{
+    width: 50%;
+    
+}
+
+.pfimg img{
+    width: 22vw;
+    margin-left: 35%;
+    border-radius: 40%;
+
+}
+
+.contact{
+    margin-top: 10px;
+
+}
+
+.contact h1{
+    margin-top: 20px;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+.contact .row{
+    display: flex;
+    
+    width: 100%;
+    height: 400px;
+}
+
+
+.contact .left-sider{
+    width: 40%;
+    
+    
+    
+    margin-top: 10px;
+}
+
+.contact .right-sider{
+    width: 40%;
+    
+
+    margin-top: 10px;
+}
+
+
+
+ .conatct-input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-top: 10px;
+
+
+ }
+
+ .contact textarea{
+    height: 140px;
+    border-radius: 20px;
+    padding-top: 15px;
+ } 
+
+ .conatct-input:focus{
+    border: 2px solid #ff994f;
+ }
+
+ .conatct-input ::placeholder{
+    color: #a9a9a9;
+ }
+
+ .left-sider button{
+    display:  flex;
+    align-items: center;
+    padding: 16px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+ }
+
+ .left-sider button img{
+    height: 15px;
+ }
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 80px; /* Adjust according to your header height */
+        left: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .menuu{
+        margin-right: 20px;
+        height: 20px;
+        width: 20px;
+    }
+    .navbar a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .navbar.active {
+        display: flex;
+    }
+
+    .iam h3{
+        font-size: 0px;
+        line-height: 24px;
+        font-weight: 0;
+    }
+
+    .iam p{
+        font-size: 0px;
+    }
+
+    .iam h1 {
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 44px;
+    }
+
+    
+
+    .pfimg img{
+        width: 70%;
+    }
+
+    
+
+    .social-media a{
+        text-decoration: none;
+        
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: 1px solid var(--main-color);
+        border-radius: 50%;
+        font-size: 12px;
+        color: var(--main-color);
+        margin: 5px;
+        transition: 5s ease;
+    }
+    
+    .conatct-input{
+        width: 80vw;
+    }
+    .right-sider{
+        display: none;
+    }
+
+
+    .address{
+        margin-top: 70px;
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+
+
+}
